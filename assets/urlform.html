@@ -1,0 +1,49 @@
+<html>
+<head>
+<style type = "text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 13px;
+}
+body {
+	color:#082343;
+	background:#2d6e98;
+}
+
+.row
+{
+border:0px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/style_form.css"/>
+
+<script type = "text/javascript">
+function submitTheURL()
+{
+	var theVal = document.getElementById('url').value;
+	Android.submitURL(theVal);
+}
+</script>
+</head>
+<body>
+<h1>Set up</h1>
+Before you can start using the app, please enter the URL to your Collabtive installation below: <br />
+<form class = "main">
+	<fieldset>
+		<div class = "row">
+		<label for = "url">URL:</label><input type = "text" class="text" name = "url" id="url" />
+		</div>
+		
+			<div class="row-butn-bottom">
+				<label>&nbsp;</label>
+				<button onfocus="this.blur();" onclick = "submitTheURL();">ADD</button>
+				<button onclick="return false;" onfocus="this.blur();">CANCEL</button>
+			</div>
+	</fieldset>
+</form>
+</body>
+
+</html>
